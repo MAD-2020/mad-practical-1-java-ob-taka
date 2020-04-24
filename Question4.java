@@ -4,20 +4,16 @@ public class Question4
 {
   public static void main(String[] args)
   {
-    /**
-     * Prints a right angle triangle with *. The base of the triangle depends on the integer given.
-     *    e.g.
-     *     > 5
-     *     *****
-     *     ****
-     *     ***
-     *     **
-     *     *
-     * 
-     * Hint: 2 loops are required. System.out.print(...) to print on single line.
-     */
-     
-    Scanner in = new Scanner(System.in);
+    Scanner _input = new Scanner(System.in);
+    String x = "*";
+    System.out.print("Enter base of the triangle: ");
+    
+    int base = _input.nextInt();
+
+    for (int i = base; i > 0; i--){
+      System.out.printf("%s\n", x.repeat(i));
+    }
+    
     
   }
 }
